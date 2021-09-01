@@ -1,5 +1,14 @@
-<h1>TO DO LIST</h1>
+# TO DO LIST
 
-<p>Simple to-do list.</p>
+## DESCRIPTION 
+A to-do list for creating notes with the functions of adding, deleting one or all notes.
+
+## TECHNOLOGIES
++ TailWind CSS
++ Google fonts
++ MWC-pattern
++ Flexbox
+
+## Demo:
 
 [Watch](https://helense.github.io/to_do_list/)
