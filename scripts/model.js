@@ -1,8 +1,9 @@
 // MODEL====================================================>
 export const model = {
-    todos: null,
+    todos: [],
     getLocalStorage: function(){
-        model.todos = JSON.parse(localStorage.getItem('todos'))
+        if(localStorage.getItem("todos") != null)
+            model.todos = JSON.parse(localStorage.getItem('todos'));
     },
     setLocalStorage: function(){
         localStorage.setItem('todos', JSON.stringify(model.todos))

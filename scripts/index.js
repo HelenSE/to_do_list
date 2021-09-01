@@ -1,15 +1,14 @@
-import { model } from "./model.js"
-import { initListeners, printApp } from "./view.js"
+import { model } from "./model.js";
+import { view } from "./view.js";
 
 // ROOT====================================================>
-const root = document.getElementById('root')
+export const root = document.getElementById('root');
 
 // APP====================================================>
 
 function app(){
-    model.getLocalStorage()
-    printApp()
-    initListeners()
+    model.getLocalStorage();
+    view.printApp(root);
 }
 
-app()
+app();
