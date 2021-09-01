@@ -1,32 +1,10 @@
+// MODEL====================================================>
 export const model = {
-    data: [],
-    get: function(){
-        if(localStorage.length){
-            model.data= JSON.parse(localStorage.getItem('todos'))
-        }
-        model.data = []   
+    todos: null,
+    getLocalStorage: function(){
+        model.todos = JSON.parse(localStorage.getItem('todos'))
     },
-    set: function(value){
-        model.data.push(value)
-        localStorage.getItem('todos', JSON.stringify(model.data))
+    setLocalStorage: function(){
+        localStorage.setItem('todos', JSON.stringify(model.todos))
     }
 }
-
-export let todos = [
-    {
-        title: 'Drink',
-        text: 'I need to drink',
-        time: '9:00',
-        isDone: true,
-        id: '0'
-    },
-
-    {
-        title: 'Eat',
-        text: 'I need to eat',
-        time: '13:00',
-        isDone: false,
-        id: '1'
-    }
-]
-

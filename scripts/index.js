@@ -1,19 +1,15 @@
-//Imports
-import {header, modal, card, creatCard} from "./templates.js";
-import {view} from "./view.js"
-import {model, todos} from "./model.js"
-import {controller} from "./controller.js"
+import { model } from "./model.js"
+import { initListeners, printApp } from "./view.js"
 
-//DOM Elements
-const root = document.querySelector ('#root');
-let modal_window = document.querySelector ('#modal_window');
+// ROOT====================================================>
+const root = document.getElementById('root')
 
-//APP
-function app() {
-    view.init(root)
-    model.get()
-    view.render(root)  
+// APP====================================================>
+
+function app(){
+    model.getLocalStorage()
+    printApp()
+    initListeners()
 }
+
 app()
-
-
