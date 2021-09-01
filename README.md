@@ -12,4 +12,4 @@ A to-do list for creating notes with the functions of adding, deleting one or al
 
 ## Demo:
 
-[Watch] (https://helense.github.io/to_do_list/)
+[Watch](https://helense.github.io/to_do_list/)
