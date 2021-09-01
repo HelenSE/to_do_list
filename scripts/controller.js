@@ -1,6 +1,5 @@
 // CONTROLLER====================================================>
 
-import { root } from "./index.js";
 import { model } from "./model.js";
 import { view } from "./view.js";
 
