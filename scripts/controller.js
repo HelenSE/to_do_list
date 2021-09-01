@@ -22,6 +22,8 @@ export const controller = {
           view.render();
     },
     
+// ADD TODO IN MODAL====================================================>
+    
     addTodo: function(modal){
             let todo = {};
             const inputText = document.getElementById("inputText");
@@ -51,12 +53,15 @@ export const controller = {
         inputTitle.value = '';
         view.closeModal(modal);
     },
+    
+    // DELETE TODO====================================================>
 
     deleteAllTodos: function(){
             model.todos = [];
             model.setLocalStorage();
             view.render();
     },
+    
     deleteLastTodo: function(){
         if(model.todos.length) {
             model.todos.pop();
