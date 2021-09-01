@@ -10,7 +10,7 @@ body {
 }
 
 .root {
-  width: 70%;
+  width: 90%;
   height: 90vh;
   min-width: 300px;
   margin: 0 auto;
@@ -60,7 +60,7 @@ body {
 
 .header__button {
   display: inline-block;
-  width: 140px;
+  width: 200px;
   height: 40px;
   margin-bottom: 30px;
   text-align: center;
@@ -73,7 +73,6 @@ body {
   color: #eee;
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
-  display: block;
 }
 
 .header__button:hover {
